@@ -46,6 +46,16 @@ export default function () {
       name: 'Meditate',
       type: 'done',
     },
+    {
+      id: 5,
+      name: 'Wife\'s birthday',
+      type: 'event',
+    },
+    {
+      id: 6,
+      name: 'There is 5 bucks in the drawer',
+      type: 'note',
+    },
   ];
 
   return (

@@ -1,1 +1,1 @@
-export type TaskType = 'new' | 'done' | 'next-day' | 'next-month';
+export type TaskType = 'new' | 'done' | 'next-day' | 'next-month' | 'event' | 'note';

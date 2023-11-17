@@ -9,6 +9,8 @@ const iconMap: IIconMap = {
   'done': 'cross',
   'next-day': 'chevron-right',
   'next-month': 'chevron-left',
+  'event': 'plus',
+  'note': 'minus'
 };
 
 const styles = StyleSheet.create({
