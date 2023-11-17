@@ -11,7 +11,7 @@ export function TaskList(props: Props) {
 
   return (
     <View>
-      { tasks.map(task => <Task key={task.id} name={task.name} />) }
+      { tasks.map(task => <Task key={task.id} {...task} />) }
     </View>
   );
 }

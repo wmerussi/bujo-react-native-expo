@@ -4,6 +4,7 @@
     "paths": {
       "@components": ["components"],
       "@interfaces": ["interfaces"],
+      "@types": ["types"],
     },
   },
   "extends": "expo/tsconfig.base",

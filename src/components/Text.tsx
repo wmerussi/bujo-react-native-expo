@@ -3,6 +3,7 @@ import { StyleSheet, Text as ReactNativeText } from "react-native";
 interface Props {
   children: React.ReactNode;
   size?: 'small' | 'medium' | 'large';
+  style?: object;
 }
 
 const small = {
@@ -21,13 +22,14 @@ const large = {
 };
 
 export function Text(props: Props) {
-  const { children, size } = props;
-  const style = size === 'small' ? small : size === 'large' ? large : medium;
+  const { children, size, style } = props;
+  const fontStyle = size === 'small' ? small : size === 'large' ? large : medium;
 
   const styles = StyleSheet.create({
     text: {
-      fontFamily: "Regular",
       ...style,
+      fontFamily: "Regular",
+      ...fontStyle,
     }
   });
 

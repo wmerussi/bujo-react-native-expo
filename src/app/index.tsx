@@ -28,11 +28,23 @@ export default function () {
   const tasks: ITask[] = [
     {
       id: 1,
-      name: 'Talk to William'
+      name: 'Talk to William',
+      type: 'new',
     },
     {
       id: 2,
-      name: 'Do 5 push ups'
+      name: 'Do 5 push ups',
+      type: 'next-month',
+    },
+    {
+      id: 3,
+      name: 'Buy milk',
+      type: 'next-day',
+    },
+    {
+      id: 4,
+      name: 'Meditate',
+      type: 'done',
     },
   ];
 
