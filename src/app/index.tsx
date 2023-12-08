@@ -4,7 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import * as SplashScreen from 'expo-splash-screen';
 
-import { TaskList } from '@components';
+import { TaskList, Title } from '@components';
 import { ITask } from '@interfaces';
 
 SplashScreen.preventAutoHideAsync();
@@ -53,14 +53,15 @@ export default function () {
     },
     {
       id: 6,
-      name: 'There is 5 bucks in the drawer',
+      name: 'There are 5 bucks in the drawer of the kitchen',
       type: 'note',
     },
   ];
 
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
-      <TaskList tasks={tasks}/>
+      <Title>Today</Title>
+      <TaskList style={styles.taskList} tasks={tasks}/>
       <StatusBar style="auto" />
     </View>
   );
@@ -71,4 +72,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     fontFamily: 'Bold',
   },
+  taskList: {
+    marginTop: 16,
+    paddingLeft: 16,
+    paddingRight: 16,
+  }
 });
